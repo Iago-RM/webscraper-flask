@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <li>
+        {% for para in paras%}
+        <ol>
+            {{ para.text.strip() }}
+        </ol>
+        {%endfor%}
+        
+    </li>
 </body>
 </html>
